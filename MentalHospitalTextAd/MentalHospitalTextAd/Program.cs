@@ -513,7 +513,7 @@ namespace MentalHospitalTextAd
 
         public static string TheMorgue(string journalistName)
         {
-            Console.WriteLine("dead");
+            Console.WriteLine("youre going to die!");
 
             return journalistName;
         }
