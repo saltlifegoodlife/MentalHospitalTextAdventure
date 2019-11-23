@@ -19,11 +19,13 @@ namespace MentalHospitalTextAd
             Thread.Sleep(4000);
             Console.WriteLine("Please enter your journalist's name:");
             string journalistName = Console.ReadLine();
+            Console.Clear();
 
             TheStart(journalistName);
 
             string enterHospital = Console.ReadLine();
-            Console.WriteLine("");
+            
+            Console.Clear();
             int numChoice;
             while (!int.TryParse(enterHospital, out numChoice))
             {
@@ -36,8 +38,8 @@ namespace MentalHospitalTextAd
                 MaintenanceDoor(journalistName);
 
                 string mainHospital = Console.ReadLine();
-
-                Console.WriteLine("");
+                Console.Clear();
+                
 
                 int num;
                 while (!int.TryParse(mainHospital, out num))
@@ -52,8 +54,8 @@ namespace MentalHospitalTextAd
                     SecurityOffice(journalistName);
 
                     string securityChoice = Console.ReadLine();
-                    Console.WriteLine("");
-
+                    
+                    Console.Clear();
                     int securityNum;
 
                     while (!int.TryParse(securityChoice, out securityNum))
@@ -68,8 +70,8 @@ namespace MentalHospitalTextAd
                         UnderDesk(journalistName);
                         SurgeryRoom(journalistName);
                         string surgeryChoice = Console.ReadLine();
-                        Console.WriteLine("");
-
+                        
+                        Console.Clear();
                         int surgeryNum;
 
                         while (!int.TryParse(surgeryChoice, out surgeryNum))
@@ -83,6 +85,7 @@ namespace MentalHospitalTextAd
                             Release(journalistName);
                             Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                             string restart = Console.ReadLine();
+                            Console.Clear();
                             Restart(restart);
                         }
                         else if (surgeryNum == 2)
@@ -94,6 +97,7 @@ namespace MentalHospitalTextAd
                             Console.WriteLine("Unfortunately you couldn't make the choice, something grabbed you!");
                             Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                             string restart = Console.ReadLine();
+                            Console.Clear();
                             Restart(restart);
 
                         }
@@ -105,6 +109,7 @@ namespace MentalHospitalTextAd
                         BehindDoor(journalistName);
                         Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                         string restart = Console.ReadLine();
+                        Console.Clear();
                         Restart(restart);
                     }
                     else
@@ -112,6 +117,7 @@ namespace MentalHospitalTextAd
                         Console.WriteLine("Unfortunately you couldn't make the choice, something grabbed you!");
                         Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                         string restart = Console.ReadLine();
+                        Console.Clear();
                         Restart(restart);
                     }
 
@@ -122,8 +128,8 @@ namespace MentalHospitalTextAd
                     DoctorOffice(journalistName);
 
                     string doctorChoice = Console.ReadLine();
-                    Console.WriteLine("");
-
+                    
+                    Console.Clear();
                     int doctorNum;
 
                     while (!int.TryParse(doctorChoice, out doctorNum))
@@ -137,6 +143,7 @@ namespace MentalHospitalTextAd
                         StayInOffice(journalistName);
                         Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                         string restart = Console.ReadLine();
+                        Console.Clear();
                         Restart(restart);
 
                     }
@@ -144,8 +151,8 @@ namespace MentalHospitalTextAd
                     {
                         SneakPassed(journalistName);
                         string sneakChoice = Console.ReadLine();
-                        Console.WriteLine("");
-
+                        
+                        Console.Clear();
                         int sneakNum;
 
                         while (!int.TryParse(sneakChoice, out sneakNum))
@@ -160,6 +167,7 @@ namespace MentalHospitalTextAd
 
                             Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                             string restart = Console.ReadLine();
+                            Console.Clear();
                             Restart(restart);
                         }
                         else if (sneakNum == 2)
@@ -167,6 +175,7 @@ namespace MentalHospitalTextAd
                             InVent(journalistName);
                             Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                             string restart = Console.ReadLine();
+                            Console.Clear();
                             Restart(restart);
                         }
                         else
@@ -174,6 +183,7 @@ namespace MentalHospitalTextAd
                             Console.WriteLine("Unfortunately you couldn't make the choice, it found you!");
                             Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                             string restart = Console.ReadLine();
+                            Console.Clear();
                             Restart(restart);
                         }
 
@@ -184,6 +194,7 @@ namespace MentalHospitalTextAd
                         Console.WriteLine("Unfortunately you couldn't make the choice, it found you!");
                         Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                         string restart = Console.ReadLine();
+                        Console.Clear();
                         Restart(restart);
                     }
 
@@ -194,6 +205,7 @@ namespace MentalHospitalTextAd
                     Console.WriteLine("Unfortunately you couldn't make the choice, something grabbed you from behind!");
                     Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                     string restart = Console.ReadLine();
+                    Console.Clear();
                     Restart(restart);
 
                 }
@@ -204,8 +216,8 @@ namespace MentalHospitalTextAd
             {
                 CellarDoor(journalistName);
                 string cellarChoice = Console.ReadLine();
-                Console.WriteLine("");
-
+                
+                Console.Clear();
                 int cellarNum;
 
                 while (!int.TryParse(cellarChoice, out cellarNum))
@@ -217,6 +229,64 @@ namespace MentalHospitalTextAd
                 if (cellarNum == 1)
                 {
                     TheMorgue(journalistName);
+                    string morgueChoice = Console.ReadLine();
+                    
+                    Console.Clear();
+                    int morgueNum;
+
+                    while (!int.TryParse(morgueChoice, out morgueNum))
+                    {
+                        Console.WriteLine("Please enter a number for a choice:");
+                        morgueChoice = Console.ReadLine();
+                    }
+
+                    if (morgueNum == 1)
+                    {
+                        UnderSheets(journalistName);
+                        string labChoice = Console.ReadLine();
+                        
+                        Console.Clear();
+                        int labNum;
+
+                        while (!int.TryParse(labChoice, out labNum))
+                        {
+                            Console.WriteLine("Please enter a number for a choice:");
+                            morgueChoice = Console.ReadLine();
+                        }
+
+                        if (labNum == 1)
+                        {
+                            Cabinets(journalistName);
+                        }
+                        else if (labNum == 2)
+                        {
+                            LabDoor(journalistName);
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Unfortunately you couldn't make the choice, you were grabbed from behind!");
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
+                        }
+                    }
+                    else if (morgueNum == 2)
+                    {
+                        StorageUnit(journalistName);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Unfortunately you couldn't make the choice, you were grabbed from behind!");
+                        Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                        string restart = Console.ReadLine();
+                        Console.Clear();
+                        Restart(restart);
+                    }
                 }
                 else if (cellarNum == 2)
                 {
@@ -227,6 +297,7 @@ namespace MentalHospitalTextAd
                     Console.WriteLine("Unfortunately you couldn't make the choice, you were found by the guards!");
                     Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                     string restart = Console.ReadLine();
+                    Console.Clear();
                     Restart(restart);
                 }
             }
@@ -235,6 +306,7 @@ namespace MentalHospitalTextAd
                 Console.WriteLine("Unfortunately you couldn't make the choice, you were found by the guards!");
                 Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                 string restart = Console.ReadLine();
+                Console.Clear();
                 Restart(restart);
 
 
@@ -258,13 +330,6 @@ namespace MentalHospitalTextAd
             }
             if (restartNum == 1)
             {
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("");
-                Console.WriteLine("");
-
-
                 Main(null);
             }
             else
@@ -349,6 +414,19 @@ namespace MentalHospitalTextAd
             return journalistName;
 
         }
+        public static string BehindDoor(string journalistName)
+        {
+            Console.WriteLine($"Still shaken from the blood earlier, {journalistName} panics and runs behind the door.");
+            Console.WriteLine($"{journalistName} tries to be quiet as the massive dark figure slowly steps through the doorway.");
+            Console.WriteLine($"{journalistName} can hear the figure sniffing loudy, like a wolf searching for it's prey.");
+            Console.WriteLine($"Luckily the figure turns away and starts back down the hall..... {journalistName} relaxes too sudden");
+            Console.WriteLine($"causes the door to sqeak! {journalistName} looks up where the hinges are and sees two big, yellow eyes");
+            Console.WriteLine($"glaring. It's too late....The figure pulls {journalistName} from behind the door.... Screams and two yellow");
+            Console.WriteLine($"eyes are the last thing {journalistName} hears and sees before the end. ");
+            return journalistName;
+
+
+        }
 
 
         public static string SurgeryRoom(string journalistName)
@@ -400,19 +478,6 @@ namespace MentalHospitalTextAd
 
 
 
-        public static string BehindDoor(string journalistName)
-        {
-            Console.WriteLine($"Still shaken from the blood earlier, {journalistName} panics and runs behind the door.");
-            Console.WriteLine($"{journalistName} tries to be quiet as the massive dark figure slowly steps through the doorway.");
-            Console.WriteLine($"{journalistName} can hear the figure sniffing loudy, like a walf searching for it's prey.");
-            Console.WriteLine($"Luckily the figure turns away and starts back down the hall..... {journalistName} relaxes too sudden");
-            Console.WriteLine($"causes the door to sqeak! {journalistName} looks up where the hinges are and sees two big, yellow eyes");
-            Console.WriteLine($"glaring. It's too late....The figure pulls {journalistName} from behind the door.... Screams and two yellow");
-            Console.WriteLine($"eyes are the last thing {journalistName} hears and sees before the end. ");
-            return journalistName;
-
-
-        }
 
         public static string DoctorOffice(string journalistName)
         {
@@ -513,7 +578,60 @@ namespace MentalHospitalTextAd
 
         public static string TheMorgue(string journalistName)
         {
-            Console.WriteLine("youre going to die!");
+            Console.WriteLine($"{journalistName} decides to go to the Morgue. Trying to be quiet, {journalistName} pushes the door open slowly.");
+            Console.WriteLine($"{journalistName} sees bodies covered with sheets on tables and a wall where they store bodies. {journalistName}");
+            Console.WriteLine($"decides to lift some of the sheets to look at the bodies only to realize that not all of them are human...");
+            Console.WriteLine($"Some of them are animals. Why would there be animals at a mental hospital? The last sheet {journalistName} lifts");
+            Console.WriteLine($"the human body shows animal features! Could have there been human experiments? When {journalistName} is looking around");
+            Console.WriteLine($"something starts trying to open the door! {journalistName} starts panicing! Where to hide?!?! {journalistName} can 1: hide");
+            Console.WriteLine($"under one of the sheets with one of the bodies or 2: get in one of the storage units on the wall?");
+
+            return journalistName;
+        }
+
+        public static string UnderSheets(string journalistName)
+        {
+            Console.WriteLine($"{journalistName} doesn't have much time to choose where to hide! Panicing, {journalistName} gets under one of the sheets");
+            Console.WriteLine($"on one of the tables! The bad part of it is {journalistName} is covered up with one of the dead bodies.... ");
+            Console.WriteLine($"The door finally opens up! {journalistName} tries to not cough due to the smell of the body....");
+            Thread.Sleep(10000);
+            Console.WriteLine($"{journalistName} can see the dark figure walking closer to the table! The figure starts to run its hands down") ;
+            Console.WriteLine($"the sheet! The hand gets right in front of {journalistName}'s face! {journalistName} is drenched with sweat!");
+            Console.WriteLine($"The figure starts to grab the sheet and lift it up.....!");
+            Thread.Sleep(10000);
+            Console.WriteLine($"Suddenly the figure stops and walks away torwards the storage units... The figure opens up one of the units and");
+            Console.WriteLine($"roars like a bear! Then it sounds like it is starting eating something. {journalistName} passes out from the ");
+            Console.WriteLine($"body and wakes up later to find that the creature has left.... Getting up from the table, {journalistName}");
+            Console.WriteLine($"continues through the next door into a hallway. {journalistName} sees a light coming from a room farther down.");
+            Console.WriteLine($"{journalistName} sneaks up to the door and slowly opens it up. Luckily no one is inide, but {journalistName}");
+            Console.WriteLine($"does find a research lab. {journalistName} starts looking on the computers and finds notes on experiments.");
+            Console.WriteLine($"Apparently the military was doing experiments on patients at the hospital. They were trying something called");
+            Console.WriteLine($"gene mutation. They were trying to make Super Soldiers! {journalistName} gets all the info needed to write");
+            Console.WriteLine($"the article. {journalistName} hears something coming down the hallway! {journalistName} tries to figure out ");
+            Console.WriteLine($"where to hide! The only options are 1: get in one of the cabinets or 2: behind the door?");
+            return journalistName;
+        }
+
+        public static string Cabinets(string journalistName)
+        {
+
+            return journalistName;
+        }
+
+        public static string LabDoor(string journalistName)
+        {
+            Console.WriteLine($"Still shaken from the blood earlier, {journalistName} panics and runs behind the door.");
+            Console.WriteLine($"{journalistName} tries to be quiet as the massive dark figure slowly steps through the doorway.");
+            Console.WriteLine($"{journalistName} can hear the figure noises like a bear intimidating another predator.");
+            Console.WriteLine($"Luckily the figure turns away and starts back down the hall..... {journalistName} relaxes too sudden");
+            Console.WriteLine($"causes the door to sqeak! The figure smashes through the door!");
+            Console.WriteLine($"It's too late....The figure pulls {journalistName} from behind the door....");
+            Console.WriteLine($"{journalistName} gets eaten alive!");           
+            return journalistName;
+        }
+
+        public static string StorageUnit(string journalistName)
+        {
 
             return journalistName;
         }

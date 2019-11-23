@@ -1,0 +1,11 @@
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\bin\Debug\netcoreapp3.0\MentalHospitalTextAd.exe
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\bin\Debug\netcoreapp3.0\MentalHospitalTextAd.deps.json
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\bin\Debug\netcoreapp3.0\MentalHospitalTextAd.runtimeconfig.json
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\bin\Debug\netcoreapp3.0\MentalHospitalTextAd.runtimeconfig.dev.json
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\bin\Debug\netcoreapp3.0\MentalHospitalTextAd.dll
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\bin\Debug\netcoreapp3.0\MentalHospitalTextAd.pdb
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\obj\Debug\netcoreapp3.0\MentalHospitalTextAd.csprojAssemblyReference.cache
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\obj\Debug\netcoreapp3.0\MentalHospitalTextAd.AssemblyInfoInputs.cache
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\obj\Debug\netcoreapp3.0\MentalHospitalTextAd.AssemblyInfo.cs
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\obj\Debug\netcoreapp3.0\MentalHospitalTextAd.dll
+C:\Users\rbeck\Desktop\TrueCoders\MentalHospitalAdventure\MentalHospitalTextAd\MentalHospitalTextAd\obj\Debug\netcoreapp3.0\MentalHospitalTextAd.pdb
