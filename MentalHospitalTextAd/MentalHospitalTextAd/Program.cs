@@ -15,7 +15,7 @@ namespace MentalHospitalTextAd
             Thread.Sleep(4000);
             Console.WriteLine("Sometimes a journalist can go too far and get involved in something they only thought they understood.");
             Thread.Sleep(4000);
-            Console.WriteLine("Something that......opens up doors that can't be shut.");
+            Console.WriteLine("Something that......opens up doors that can't be closed.");
             Thread.Sleep(4000);
             Console.WriteLine("Please enter your journalist's name:");
             string journalistName = Console.ReadLine();
@@ -79,7 +79,8 @@ namespace MentalHospitalTextAd
                             Console.WriteLine("Please enter a number for a choice:");
                             surgeryChoice = Console.ReadLine();
                         }
-
+                        //release creature or leave it behind......
+                        //bad ending
                         if (surgeryNum == 1)
                         {
                             Release(journalistName);
@@ -88,9 +89,15 @@ namespace MentalHospitalTextAd
                             Console.Clear();
                             Restart(restart);
                         }
+                        //good ending
                         else if (surgeryNum == 2)
                         {
                             LeaveBehind(journalistName);
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
+
                         }
                         else
                         {
@@ -170,8 +177,9 @@ namespace MentalHospitalTextAd
                             Console.Clear();
                             Restart(restart);
                         }
+                        //good ending
                         else if (sneakNum == 2)
-                        {
+                        {   
                             InVent(journalistName);
                             Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
                             string restart = Console.ReadLine();
@@ -225,7 +233,7 @@ namespace MentalHospitalTextAd
                     Console.WriteLine("Please enter a number for a choice:");
                     cellarChoice = Console.ReadLine();
                 }
-
+                //Morgue or Sterilization route
                 if (cellarNum == 1)
                 {
                     TheMorgue(journalistName);
@@ -251,12 +259,17 @@ namespace MentalHospitalTextAd
                         while (!int.TryParse(labChoice, out labNum))
                         {
                             Console.WriteLine("Please enter a number for a choice:");
-                            morgueChoice = Console.ReadLine();
+                            labChoice = Console.ReadLine();
                         }
-
+                        //good ending
                         if (labNum == 1)
                         {
                             Cabinets(journalistName);
+                            Console.WriteLine("");
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
                         }
                         else if (labNum == 2)
                         {
@@ -275,9 +288,15 @@ namespace MentalHospitalTextAd
                             Restart(restart);
                         }
                     }
+                    
                     else if (morgueNum == 2)
                     {
                         StorageUnit(journalistName);
+                        Console.WriteLine("");
+                        Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                        string restart = Console.ReadLine();
+                        Console.Clear();
+                        Restart(restart);
                     }
                     else
                     {
@@ -291,6 +310,72 @@ namespace MentalHospitalTextAd
                 else if (cellarNum == 2)
                 {
                     SterilizationRoom(journalistName);
+                    string sterilizeChoice = Console.ReadLine();
+
+                    Console.Clear();
+                    int sterilizeNum;
+
+                    while (!int.TryParse(sterilizeChoice, out sterilizeNum))
+                    {
+                        Console.WriteLine("Please enter a number for a choice:");
+                        sterilizeChoice = Console.ReadLine();
+                    }
+
+                    if (sterilizeNum == 1)
+                    {
+                        EquipmentCover(journalistName);
+                        Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                        string restart = Console.ReadLine();
+                        Console.Clear();
+                        Restart(restart);
+                    }
+                    else if (sterilizeNum == 2)
+                    {
+                        BehindCounter(journalistName);
+                        string examChoice = Console.ReadLine();
+
+                        Console.Clear();
+                        int examNum;
+
+                        while (!int.TryParse(examChoice, out examNum))
+                        {
+                            Console.WriteLine("Please enter a number for a choice:");
+                            examChoice = Console.ReadLine();
+                        }
+                        //bad ending
+                        if (examNum == 1)
+                        {
+                            SurgeryHide(journalistName);
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
+                        }
+                        else if (examNum == 2)
+                        {
+                            WallLocker(journalistName);
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Unfortunately you couldn't make the choice, you were grabbed from behind!");
+                            Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                            string restart = Console.ReadLine();
+                            Console.Clear();
+                            Restart(restart);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Unfortunately you couldn't make the choice, you were grabbed from behind!");
+                        Console.WriteLine("Would you like to play again? 1: Yes or 2: No?");
+                        string restart = Console.ReadLine();
+                        Console.Clear();
+                        Restart(restart);
+                    }
                 }
                 else
                 {
@@ -343,7 +428,7 @@ namespace MentalHospitalTextAd
 
         public static string TheStart(string journalistName)
         {
-            Console.WriteLine("");
+            
             Console.WriteLine($"The story begins with a journalist's named {journalistName}.");
             Thread.Sleep(2000);
             Console.WriteLine("Well known for uncovering some of the biggest mysteries throughout the U.S.,");
@@ -355,7 +440,7 @@ namespace MentalHospitalTextAd
             Console.WriteLine("");
             Console.WriteLine($"So {journalistName} decides to sneak in the hospital and uncover the truth.");
             Console.WriteLine("The main entrance was guarded by military so the only way is through the woods.");
-            Console.WriteLine($"Luckily, being a journalist, {journalistName} always has a flashlight, a camera and a few other things on hand.");
+            Console.WriteLine($"Luckily, being a journalist, {journalistName} always has a flashlight, a camera, and a few other things on hand.");
             Console.WriteLine($"After sneaking past the guards, how should {journalistName} get into the hospital?");
             Console.WriteLine("Seeing how the front door is guarded outside, the only options would be 1: maintenance entrance on the first floor");
             Console.WriteLine("or 2: the cellar entrance.");
@@ -365,7 +450,7 @@ namespace MentalHospitalTextAd
         public static string MaintenanceDoor(string journalistName)
         {
             Console.WriteLine($"{journalistName} came out of the woods and crouched up to the maintenance door. ");
-            Console.WriteLine("A common journalist skill that they aren't proud of is lockpicking, but it does come in handy. Haha!");
+            Console.WriteLine($"A common journalist skill that {journalistName} isn't proud of is lockpicking, but it does come in handy. Haha!");
             Console.WriteLine($"Opening the door, {journalistName} slips in unnoticed, only to realize the trail of blood leading from the door to the");
             Console.WriteLine($"main part of the hospital. Chills start running down {journalistName}'s spine, thinking about what could");
             Console.WriteLine("have caused the blood. It looks like someone was being pulled on the ground.");
@@ -421,8 +506,8 @@ namespace MentalHospitalTextAd
             Console.WriteLine($"{journalistName} can hear the figure sniffing loudy, like a wolf searching for it's prey.");
             Console.WriteLine($"Luckily the figure turns away and starts back down the hall..... {journalistName} relaxes too sudden");
             Console.WriteLine($"causes the door to sqeak! {journalistName} looks up where the hinges are and sees two big, yellow eyes");
-            Console.WriteLine($"glaring. It's too late....The figure pulls {journalistName} from behind the door.... Screams and two yellow");
-            Console.WriteLine($"eyes are the last thing {journalistName} hears and sees before the end. ");
+            Console.WriteLine($"glaring. It's too late....The figure pulls {journalistName} from behind the door.... ");
+            Console.WriteLine($"Big yellow eyes are the last thing {journalistName} sees before the end. ");
             return journalistName;
 
 
@@ -470,8 +555,8 @@ namespace MentalHospitalTextAd
         public static string LeaveBehind(string journalistName)
         {
             Console.WriteLine($"Not trusting the creature, {journalistName} can't make the choice.....");
-            Console.WriteLine($"{journalistName} gathers the rest of the documents and heads back to the maintenance door. Sneaking by the guards,");
-            Console.WriteLine($"{journalistName} makes it back to the car safely.");
+            Console.WriteLine($"{journalistName} gathers the rest of the documents and heads back to the maintenance door. ");
+            Console.WriteLine($"Sneaking by the guards, {journalistName} makes it back to the car safely.");
             return journalistName;
         }
 
@@ -582,7 +667,7 @@ namespace MentalHospitalTextAd
             Console.WriteLine($"{journalistName} sees bodies covered with sheets on tables and a wall where they store bodies. {journalistName}");
             Console.WriteLine($"decides to lift some of the sheets to look at the bodies only to realize that not all of them are human...");
             Console.WriteLine($"Some of them are animals. Why would there be animals at a mental hospital? The last sheet {journalistName} lifts");
-            Console.WriteLine($"the human body shows animal features! Could have there been human experiments? When {journalistName} is looking around");
+            Console.WriteLine($"the human body shows animal features! Could there have been human experiments? While {journalistName} is looking around,");
             Console.WriteLine($"something starts trying to open the door! {journalistName} starts panicing! Where to hide?!?! {journalistName} can 1: hide");
             Console.WriteLine($"under one of the sheets with one of the bodies or 2: get in one of the storage units on the wall?");
 
@@ -594,11 +679,13 @@ namespace MentalHospitalTextAd
             Console.WriteLine($"{journalistName} doesn't have much time to choose where to hide! Panicing, {journalistName} gets under one of the sheets");
             Console.WriteLine($"on one of the tables! The bad part of it is {journalistName} is covered up with one of the dead bodies.... ");
             Console.WriteLine($"The door finally opens up! {journalistName} tries to not cough due to the smell of the body....");
-            Thread.Sleep(10000);
+            Thread.Sleep(15000);
+            Console.WriteLine("");
             Console.WriteLine($"{journalistName} can see the dark figure walking closer to the table! The figure starts to run its hands down") ;
             Console.WriteLine($"the sheet! The hand gets right in front of {journalistName}'s face! {journalistName} is drenched with sweat!");
             Console.WriteLine($"The figure starts to grab the sheet and lift it up.....!");
-            Thread.Sleep(10000);
+            Thread.Sleep(15000);
+            Console.WriteLine("");
             Console.WriteLine($"Suddenly the figure stops and walks away torwards the storage units... The figure opens up one of the units and");
             Console.WriteLine($"roars like a bear! Then it sounds like it is starting eating something. {journalistName} passes out from the ");
             Console.WriteLine($"body and wakes up later to find that the creature has left.... Getting up from the table, {journalistName}");
@@ -614,7 +701,27 @@ namespace MentalHospitalTextAd
 
         public static string Cabinets(string journalistName)
         {
-
+            Console.WriteLine($"Rushing to hide, {journalistName} opens up a cabinet and removes everything in it! {journalistName} gets");
+            Console.WriteLine($"inside the cabinet before the creature walks in! {journalistName} takes a slow deep breath to calm down");
+            Console.WriteLine($"so the creature doesn't hear...");
+            Thread.Sleep(10000);
+            Console.WriteLine("");
+            Console.WriteLine($"It's dead silent... You could hear a pen drop.");
+            Thread.Sleep(10000);
+            Console.WriteLine("");
+            Console.WriteLine($"Then {journalistName} hears a can get kicked next to the cabinet! {journalistName} starts to get a cold");
+            Console.WriteLine($"sweat... The cabinet door starts to open! {journalistName} can see some sort of bear like monster!");
+            Console.WriteLine("");
+            Thread.Sleep(10000);
+            Console.WriteLine($"It's trying to open the cabinet!!! {journalistName} is about to scream!");
+            Console.WriteLine("");
+            Thread.Sleep(6000);
+            Console.WriteLine($"The creature stops, there is a loud crash down the hall. The creature runs down the hall");
+            Console.WriteLine($"torwards the sound of the crash...SAFE!!! {journalistName} is relieved, starting to tear up.");
+            Console.WriteLine($"{journalistName} takes the opportunity to escape back torwards the cellar. {journalistName} manages");
+            Console.WriteLine($"to emerge from the cellar shaken but unharmed. {journalistName} goes back through the woods and ");
+            Console.WriteLine($"makes it back to the car. Sitting in the car, {journalistName} wonders what would be in store if");
+            Console.WriteLine($"the article ever gets posted....");
             return journalistName;
         }
 
@@ -632,17 +739,101 @@ namespace MentalHospitalTextAd
 
         public static string StorageUnit(string journalistName)
         {
-
+            Console.WriteLine($"{journalistName} runs to one of the body storage units! Luckily there was one that was empty!");
+            Console.WriteLine($"{journalistName} climbs in and keeps the drawer cracked so it doesn't lock. {journalistName}");
+            Console.WriteLine($"can hear something getting closer....");
+            Console.WriteLine("");
+            Thread.Sleep(10000);
+            Console.WriteLine($"The drawer slides open with so much force that {journalistName}'s sight goes blurry. A massive");
+            Console.WriteLine($"figure is standing over {journalistName}.... It's too late.... the creature slashes open");
+            Console.WriteLine($"{journalistName}'s chest! {journalistName} passes out and dies.");
             return journalistName;
         }
 
 
         public static string SterilizationRoom(string journalistName)
         {
-
+            Console.WriteLine($"{journalistName} goes down the dark hallway and comes across double doors. {journalistName}");
+            Console.WriteLine($"realizes that it's a sterilization room for surgery equipment. While searching the room,");
+            Console.WriteLine($"{journalistName} notices that there is equipment for humans and animals by the descriptions");
+            Console.WriteLine($"on the machines. Which seems odd being a human hospital. There were also dirty utensils");
+            Console.WriteLine($"with animal hairs. Something isn't adding up. ");
+            Console.WriteLine("");
+            Thread.Sleep(15000);
+            Console.WriteLine($"All of a sudden the doors swing open! A furry Massive figure walks through!");
+            Console.WriteLine($"{journalistName} only has two choices, either 1: hide under some equipment covers or ");
+            Console.WriteLine($"2: get down behind a counter?");
             return journalistName;
         }
 
+        public static string EquipmentCover(string journalistName)
+        {
+            Console.WriteLine($"{journalistName} quickly gets under some equipment covers! There is a pool of blood");
+            Console.WriteLine($" below {journalistName}! {journalistName} slips and falls, ripping the");
+            Console.WriteLine($"covers off! The horror standing in front of {journalistName} is a hybrid creature with");
+            Console.WriteLine($"human and bear traits...{journalistName} is quickly dismembered from the massive claws");
+            Console.WriteLine($"of the creature!");
+            return journalistName;
+        }
+
+        public static string BehindCounter(string journalistName)
+        {
+            Console.WriteLine($"{journalistName} doesn't have time to hide anywhere except getting behind the counter");
+            Console.WriteLine($"near by! The massive creature starts to move around the counter. {journalistName} moves");
+            Console.WriteLine($"the opposite way as quietly as possible. {journalistName} doesn't see the tray of needles");
+            Console.WriteLine($"sitting at the edge of the counter. {journalistName}'s head bumps into the tray causing");
+            Console.WriteLine($"the needles to fall! One ends up sticking {journalistName} in the leg! The creature turns");
+            Console.WriteLine($"around and roars! {journalistName} takes off running the wrong direction! {journalistName}");
+            Console.WriteLine($"is headed further into the hospital! With the creature close behind, {journalistName} sees");
+            Console.WriteLine($"a staircase leading up to the surgery floor! {journalistName} makes it to the top and slams");
+            Console.WriteLine($"the door behind! The creature starts beating on the door! {journalistName} has to hide ");
+            Console.WriteLine($"before the door breaks! 1: In the surgery room with the lights off or 2: in a wall locker?!");
+            return journalistName;
+        }
+
+        public static string SurgeryHide(string journalistName)
+        {
+            Console.WriteLine($"{journalistName} runs into the surgery room while turning the lights completely off!");
+            Console.WriteLine($"{journalistName} can see the Beast through the window destroying the other room trying");
+            Console.WriteLine($"to find it's pray! {journalistName} stays quiet but starts to feel weird. The room is ");
+            Console.WriteLine($"starting to spin and {journalistName} is getting dizzy!");
+            Console.WriteLine("");
+            Thread.Sleep(12000);
+            Console.WriteLine($"OH NO, THE NEEDLE! Something must have been in the needle still! {journalistName} passes out!");
+            Thread.Sleep(9000);
+            Console.WriteLine("");
+            Console.WriteLine($"{journalistName} wakes up looking at the ceiling with bright lights. {journalistName} can't");
+            Console.WriteLine($"move! {journalistName} is strapped to a surgery table! there are doctors standing around the");
+            Console.WriteLine($"table! {journalistName} can overhear them saying that this will be human trials #4!");
+            Console.WriteLine($"{journalistName} passes out again!");
+            Thread.Sleep(12000);
+            Console.WriteLine("");
+            Console.WriteLine($"{journalistName} finally wakes up again in the hospital laying against a wall. Getting up, ");
+            Console.WriteLine($"{journalistName} feels different.....Taller.....");
+            Thread.Sleep(8000);
+            Console.WriteLine("");
+            Console.WriteLine($"Angry....");
+            Thread.Sleep(3000);
+            Console.WriteLine("");
+            Console.WriteLine("Outrageously Hungry....");
+            Console.WriteLine($"Something isn't right! {journalistName} finds a mirror... {journalistName} yells with a big");
+            Console.WriteLine($"roar! As light fades into darkness, {journalistName} joins the beasts");
+            Console.WriteLine($"roaming the hospital....");
+            return journalistName;
+        }
+
+        public static string WallLocker(string journalistName)
+        {
+            Console.WriteLine($"{journalistName} runs to a wall locker near the surgery room! {journalistName} hears");
+            Console.WriteLine($"the door break down! The beast franticly searches the room! The beast flips desks and");
+            Console.WriteLine($"throws chairs trying to find {journalistName}! Then silence......");
+            Thread.Sleep(6000);
+            Console.WriteLine("......");
+            Thread.Sleep(6000);
+            Console.WriteLine($"The Beast rips the wall locker open! {journalistName} screams for help to no avail!");
+            Console.WriteLine($"The Beast strangles {journalistName} to death!");
+            return journalistName;
+        }
 
 
     }
