@@ -523,7 +523,7 @@ namespace MentalHospitalTextAd
             Console.WriteLine("BODIES.....EVERYWHERE..... like a war had broken out inside the hospital.");
             Console.WriteLine("");
             Console.WriteLine($"{journalistName} was getting nauseous from the scene. Bodies ripped apart. Blood all over the walls.");
-            Console.WriteLine($"Finally making it to the surgery room, {journalistName} starts finding papers on what seems like experiments on patients.");
+            Console.WriteLine($"Finally making it to the surgery room, {journalistName} starts finding papers on patients that were being experimented on.");
             Console.WriteLine($"Some of the papers stating genetic mutation and gene splicing. Apparently the military is working on super soldiers.");
             Console.WriteLine($"{journalistName} found the clues about what happened here, but noises were coming from the surgery room.....");
             Thread.Sleep(12000);
@@ -569,15 +569,15 @@ namespace MentalHospitalTextAd
             Console.WriteLine($"Going to the second floor is gonna be tricky. {journalistName} is going to have to go to the main reception");
             Console.WriteLine($"area and head up the main flight of stairs without being noticed. {journalistName} sneaks to the main area");
             Console.WriteLine($"with the trail of blood headed the same direction. When {journalistName} arrives at the bottom of the stairs,");
-            Console.WriteLine($"the blood trail going up the stairs as well. This is very unsettling. {journalistName} turns and looks at the");
+            Console.WriteLine($"the blood is going up the stairs as well. This is very unsettling. {journalistName} turns and looks at the");
             Console.WriteLine($"balcony, catching a glimpse of some massive figure! {journalistName} heart starts pounding! Slowly going up the");
             Console.WriteLine($"stairs, {journalistName} makes sure not to make too much noise. Upon reaching the top, the figure had already ");
             Console.WriteLine($"disappeared. ");
             Console.WriteLine("");
-            Console.WriteLine($"{journalistName} makes it to the main doctor's office. While searching office, {journalistName} ");
+            Console.WriteLine($"{journalistName} makes it to the main doctor's office. While searching the office, {journalistName} ");
             Console.WriteLine($"comes across some papers scattered on the desk. All of them say Classified...Top Secret....Military");
             Console.WriteLine($"Experiments....Genetic Mutation....patients showing signs of accelerated growth rate, aggression, animal features.");
-            Console.WriteLine($"{journalistName} takes pictures of the evidence and starts to leave. When {journalistName} opens the door and looks");
+            Console.WriteLine($"{journalistName} takes pictures of the evidence and starts to leave. {journalistName} opens the door and looks");
             Console.WriteLine($"left. Something is at the end of the hallway and it's not moving. What should {journalistName} do? 1: wait to see if it passes");
             Console.WriteLine($"or 2: try to sneak to the stairs?");
             return journalistName;
@@ -591,7 +591,7 @@ namespace MentalHospitalTextAd
             Console.WriteLine($"Reading the files more and more, {journalistName} wonders if that figure is one of the escaped patients. So caught up in");
             Console.WriteLine($"the files, {journalistName} didn't realize the door had opened up! The figure was staring right at {journalistName}! ");
             Thread.Sleep(6000);
-            Console.WriteLine($"The creature howled at {journalistName}! Trying to escape, {journalistName} tried to get around this wolf hybrid only to");
+            Console.WriteLine($"The creature howled at {journalistName}! Trying to escape, {journalistName} tried to get around this wolf hybrid only to get");
             Console.WriteLine($"caught in it's claws. ");
             Thread.Sleep(6000);
             Console.WriteLine($"{journalistName} died, screaming for help... ");
@@ -603,7 +603,7 @@ namespace MentalHospitalTextAd
 
         public static string SneakPassed(string journalistName)
         {
-            Console.WriteLine($"{journalistName} decides to brave the dark hallway where the figure was standing. There was some broken glass on the floor");
+            Console.WriteLine($"{journalistName} decides to brave the dark hallway where the figure is standing. There was some broken glass on the floor");
             Console.WriteLine($"{journalistName} didn't see when coming from the stairs earlier. {journalistName} steps on the broken glass!");
             Console.WriteLine("");
             Thread.Sleep(6000);
@@ -634,7 +634,7 @@ namespace MentalHospitalTextAd
             Console.WriteLine($"{journalistName} runs into the room and sees an air vent big enough to squeeze in! While holding the cover of the");
             Console.WriteLine($"vent with just hands, {journalistName} tries to stay quiet... All of a sudden the lights flip on and the creature");
             Console.WriteLine($"lunges at the vent! {journalistName} gets pushed back and falls down the ventilation shaft! {journalistName} slams");
-            Console.WriteLine($"slams through a vent landing in a hallway on the first floor. {journalistName} gets up and sprints down the hallway");
+            Console.WriteLine($"through a vent landing in a hallway on the first floor. {journalistName} gets up and sprints down the hallway");
             Console.WriteLine($"back torwards the maintenance door! Hearing the Howl of the Beast as it gets closer, {journalistName} feels like ");
             Console.WriteLine($"passing out! Making it the maintenance door, {journalistName} forgets to lock it back! Running back to the car,");
             Console.WriteLine($"{journalistName} can hear the screams of the guards and a howl in the woods!!! {journalistName} barely makes it out");
@@ -729,7 +729,7 @@ namespace MentalHospitalTextAd
         {
             Console.WriteLine($"Still shaken from the blood earlier, {journalistName} panics and runs behind the door.");
             Console.WriteLine($"{journalistName} tries to be quiet as the massive dark figure slowly steps through the doorway.");
-            Console.WriteLine($"{journalistName} can hear the figure noises like a bear intimidating another predator.");
+            Console.WriteLine($"{journalistName} can hear the figure make noises like a bear intimidating another predator.");
             Console.WriteLine($"Luckily the figure turns away and starts back down the hall..... {journalistName} relaxes too sudden");
             Console.WriteLine($"causes the door to sqeak! The figure smashes through the door!");
             Console.WriteLine($"It's too late....The figure pulls {journalistName} from behind the door....");
@@ -793,7 +793,7 @@ namespace MentalHospitalTextAd
 
         public static string SurgeryHide(string journalistName)
         {
-            Console.WriteLine($"{journalistName} runs into the surgery room while turning the lights completely off!");
+            Console.WriteLine($"{journalistName} runs into the surgery room, turning the lights completely off!");
             Console.WriteLine($"{journalistName} can see the Beast through the window destroying the other room trying");
             Console.WriteLine($"to find it's pray! {journalistName} stays quiet but starts to feel weird. The room is ");
             Console.WriteLine($"starting to spin and {journalistName} is getting dizzy!");
